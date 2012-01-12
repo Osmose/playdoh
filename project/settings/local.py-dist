@@ -71,3 +71,7 @@ SECRET_KEY = ''
 # Common Event Format logging parameters
 #CEF_PRODUCT = 'Playdoh'
 #CEF_VENDOR = 'Mozilla'
+
+# Set this to the protocol, domain, and port this site will use
+# if you want to use django-browserid authentication.
+# SITE_URL = 'http://localhost:8000'

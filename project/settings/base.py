@@ -26,11 +26,24 @@ MINIFY_BUNDLES = {
 # Defines the views served for root URLs.
 ROOT_URLCONF = 'project.urls'
 
+## BrowserID Authentication
+
+# AUTHENTICATION_BACKENDS = (
+#     'django_browserid.auth.BrowserIDBackend',
+# )
+
+# OPTIONAL: Adds browserid_form to request context.
+# TEMPLATE_CONTEXT_PROCESSORS = list(TEMPLATE_CONTEXT_PROCESSORS) + [
+#     'django_browserid.context_processors.browserid_form',
+# ]
+
 INSTALLED_APPS = list(INSTALLED_APPS) + [
     # Application base, containing global templates.
     'project.base',
     # Example code. Can (and should) be removed for actual projects.
     'project.examples',
+
+    # 'django_browserid' # BrowserID Authentication
 ]
 
 
